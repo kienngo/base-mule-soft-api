@@ -1,0 +1,1 @@
+mvn clean deploy -DmuleDeploy "-Dmule.verbose.exceptions=true" "-Dtarget.env=Dev" "-Dtarget.server.grp=mule-server-demo-grp" "-Danypoint.businessGroup=TrustDevelopment" "-Dops.id=f251bd890af941df909a67bc8c545541" "-Dops.secret=88A4073EDCB84F56993CaA3232772139" -DskipMunitTests

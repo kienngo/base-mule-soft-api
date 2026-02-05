@@ -1,0 +1,8 @@
+http:
+  port: "8084"
+
+db:
+  host: "stg-db.company.com"
+  port: "5432"
+  name: "userdb"
+  user: "stg_user"

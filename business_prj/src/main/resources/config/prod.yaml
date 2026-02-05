@@ -1,0 +1,8 @@
+http:
+  port: "8083"
+
+db:
+  host: "prod-db.company.com"
+  port: "5432"
+  name: "userdb"
+  user: "prod_user"
