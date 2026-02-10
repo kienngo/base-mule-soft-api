@@ -163,6 +163,16 @@ output application/json
 		</error-handler>
 	</flow>
 	<flow name="get:\users:business_spec-config">
+		<ee:transform doc:name="Calculator" doc:id="5e694281-32a3-42c2-9895-e4479de3c984">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+  result1: 100 / 0
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
 		<ee:transform doc:name="Transform Message">
 			<ee:message>
 				<ee:set-payload><![CDATA[%dw 2.0
